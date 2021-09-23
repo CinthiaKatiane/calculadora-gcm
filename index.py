@@ -8,6 +8,7 @@ play_in_proccess = True
 while play_in_proccess:
     calc = Calculadora()
     print ("Calculadora Reposição GCM")
+    print ("Aluna: Cinthia Katiane")
     print ("Escolha a operação que deseja realizar: ")
     print ("1 - Soma")
     print ("2 - Subtracao")
