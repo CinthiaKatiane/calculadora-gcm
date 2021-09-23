@@ -10,11 +10,12 @@ while play_in_proccess:
     print ("Escolha a operação que deseja realizar: ")
     print ("1 - Soma")
     print ("2 - Subtracao")
-    print ("3 - Sair da calculadora")
+    print ("3 - Multiplicacao")
+    print ("4 - Sair da calculadora")
 
     menuop = input("> ")
 
-    if (menuop == '3') :
+    if (menuop == '4') :
       play_in_proccess = False
         
 
@@ -31,8 +32,15 @@ while play_in_proccess:
         num1 = input("> ")
         print ("Digite o segundo número que será somsubtrairado: ")
         num2 = input("> ")
-
         print ("O resultado da subtração é:", calc.subtrair(num1, num2))
+
+    elif (menuop == '3') :
+        print ("Digite o primeiro número que será multiplicado: ")
+        num1 = input("> ")
+        print ("Digite o segundo número que será multiplicado: ")
+        num2 = input("> ")
+
+        print ("O resultado da multiplicação é:", calc.multiplicar(num1, num2))
 
    
 print ("Finalizando...")
