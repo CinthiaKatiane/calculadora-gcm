@@ -11,12 +11,13 @@ while play_in_proccess:
     print ("1 - Soma")
     print ("2 - Subtracao")
     print ("3 - Multiplicacao")
-    print ("4 - Sair da calculadora")
+    print ("4 - Divisao")
+    print ("5 - Sair da calculadora")
 
     menuop = input("> ")
 
-    if (menuop == '4') :
-      play_in_proccess = False
+    if (menuop == '5') :
+        play_in_proccess = False
         
 
     elif (menuop == '1') :
@@ -39,8 +40,14 @@ while play_in_proccess:
         num1 = input("> ")
         print ("Digite o segundo número que será multiplicado: ")
         num2 = input("> ")
-
         print ("O resultado da multiplicação é:", calc.multiplicar(num1, num2))
+        
+    elif (menuop == '4') :
+        print ("Digite o primeiro número que será dividir: ")
+        num1 = input("> ")
+        print ("Digite o segundo número que será dividir: ")
+        num2 = input("> ")
 
-   
+        print ("O resultado da divisão é:", calc.dividir(num1, num2))
+
 print ("Finalizando...")

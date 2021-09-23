@@ -14,5 +14,9 @@ class CalculadoraTeste(unittest.TestCase):
         calculadora = Calculadora()
         assert (calculadora.multiplicar(10,10), 100)
 
+    def test_divisao(self):
+        calculadora = Calculadora()
+        assert (calculadora.dividir(10,10), 1)
+
 if __name__ == "__main__":
     unittest.main()
