@@ -13,11 +13,12 @@ while play_in_proccess:
     print ("2 - Subtracao")
     print ("3 - Multiplicacao")
     print ("4 - Divisao")
-    print ("5 - Sair da calculadora")
+    print ("5 - Potencia de 2")
+    print ("6 - Sair da calculadora")
 
     menuop = input("> ")
 
-    if (menuop == '5') :
+    if (menuop == '6') :
         play_in_proccess = False
         
 
@@ -50,5 +51,11 @@ while play_in_proccess:
         num2 = input("> ")
 
         print ("O resultado da divisão é:", calc.dividir(num1, num2))
+
+    elif (menuop == '5') :
+        print ("Digite o número que será operado: ")
+        num1 = input("> ")
+        
+        print ("O resultado da potencia é:", calc.elevar(num1))
 
 print ("Finalizando...")
